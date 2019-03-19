@@ -1,11 +1,11 @@
 package main
 
 import (
-    "github.com/GoesToEleven/go-programming/code_samples/bisscuitt/dog"
-    "fmt"
+	"fmt"
+	"github.com/bisscuitt/go-learning/ninja-level-12/dog"
 )
 
 func main() {
-    dy := dog.Years(5)
-    fmt.Printf("That's %d dog years\n", dy)
+	dy := dog.Years(5)
+	fmt.Printf("That's %d dog years\n", dy)
 }
