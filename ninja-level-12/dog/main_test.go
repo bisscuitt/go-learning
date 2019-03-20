@@ -7,10 +7,26 @@ import (
 )
 
 func TestYears(t *testing.T) {
-	v := Years(1)
-	if v != 7 {
-		t.Error("Expected: 7, Got:", v)
-	}
+
+    type test struct {
+        data int
+        answer int
+    }
+
+    tests := []test{
+        {1,7},
+        {2,14},
+        {3,21},
+        {-1,0},
+        {-10,0},
+    }
+
+    for _, v := range tests {
+	    d := Years(v.data)
+	    if d != v.answer {
+		    t.Error("Expected: ", d, "Got:", v.answer)
+	    }
+    }
 }
 
 func ExampleYears() {
