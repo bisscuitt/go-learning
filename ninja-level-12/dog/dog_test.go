@@ -2,15 +2,15 @@
 package dog
 
 import (
-    "testing"
 	"fmt"
+	"testing"
 )
 
 func TestYears(t *testing.T) {
-    v := Years(1)
-    if v != 7 {
-        t.Error("Expected: 7, Got:", v)
-    }
+	v := Years(1)
+	if v != 7 {
+		t.Error("Expected: 7, Got:", v)
+	}
 }
 
 func ExampleYears() {
@@ -19,7 +19,7 @@ func ExampleYears() {
 }
 
 func BenchmarkYears(b *testing.B) {
-    for i := 0; i < b.N; i++ {
-        Years(7)
-    }
+	for i := 0; i < b.N; i++ {
+		Years(7)
+	}
 }
