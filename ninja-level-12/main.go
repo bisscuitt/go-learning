@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
-	dy := dog.Years(5)
-	fmt.Printf("That's %d dog years\n", dy)
+    hy := 5
+	dy := dog.Years(hy)
+	fmt.Printf("%d human years is %d in dog years\n", hy, dy)
 }
