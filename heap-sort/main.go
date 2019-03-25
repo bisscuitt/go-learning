@@ -3,9 +3,7 @@
 // -- Not my own work, mostly adapted from PHP and C example at https://www.geeksforgeeks.org/heap-sort/
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	nums := []int{12, 11, 13, 5, 6, 7}
