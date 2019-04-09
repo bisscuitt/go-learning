@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INDEX</title>
+</head>
+<body>
+
+Hello from index (Session ID: {{.Sid}})
+
+{{if .Images}}
+<h1>Images:</h1>
+<ol>
+    {{range .Images}}
+    <li>{{.}}</li>
+    {{end}}
+</ol>
+{{end}}
+
+</body>
+</html>

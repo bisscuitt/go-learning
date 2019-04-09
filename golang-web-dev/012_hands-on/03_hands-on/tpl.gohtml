@@ -1,0 +1,14 @@
+<html>
+<body>
+
+{{range .}}
+<h1>{{.Region}}</h1>
+<ul>
+{{range .Hotels}}
+    <li><b>{{.Name}}</b> - {{.Address}}, {{.City}}, {{.Zip}}</li>
+{{end}}
+</ul>
+{{end}}
+
+</body>
+</html>

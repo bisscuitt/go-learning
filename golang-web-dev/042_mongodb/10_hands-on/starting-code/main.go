@@ -34,11 +34,14 @@ func init() {
 }
 
 func main() {
-	http.HandleFunc("/", index)
-	http.HandleFunc("/bar", bar)
-	http.HandleFunc("/signup", signup)
-	http.HandleFunc("/login", login)
-	http.HandleFunc("/logout", logout)
+
+	c := NewController
+
+	http.HandleFunc("/", c.index)
+	http.HandleFunc("/bar", c.bar)
+	http.HandleFunc("/signup", c.signup)
+	http.HandleFunc("/login", c.login)
+	http.HandleFunc("/logout", c.logout)
 	http.Handle("/favicon.ico", http.NotFoundHandler())
 	http.ListenAndServe(":8080", nil)
 }

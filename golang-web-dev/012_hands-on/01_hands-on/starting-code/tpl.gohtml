@@ -7,8 +7,20 @@
 <body>
 
 {{range .}}
+<h1>Year: {{.AcaYear}}</h1>
+<h2>Fall</h2>
+<ul>
+    {{range .Fall.Courses}}
+    <li>{{.}}</li>
+    {{end}}
+</ul> 
 
-<!-- PUT YOUR CODE HERE TO SHOW THE DATA-->
+<h2>Spring</h2>
+<ul>
+    {{range .Spring.Courses}}
+    <li>{{.Number}} - {{.Name}} ({{.Units}} Units)</li>
+    {{end}}
+</ul> 
 
 {{end}}
 

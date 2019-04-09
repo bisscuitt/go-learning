@@ -1,0 +1,14 @@
+<html>
+<body>
+
+<table>
+{{range . -}}
+<tr>
+    {{- range . }}
+    <td>{{.}}</td>
+    {{end}}
+</tr>
+{{- end}}
+
+</body>
+</html>
